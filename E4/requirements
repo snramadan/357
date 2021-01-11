@@ -1,0 +1,9 @@
+reqAtMostGlobalVariables 0
+reqAtMostStaticFileVariables 0
+reqAtMostStaticLocalVariables 0
+reqNoUseOf "(^goto | goto )"
+reqNoDynamicMemory
+reqUseOf "(^struct | struct .*| struct$)"
+reqAtMostHeaderFiles 0
+reqAtMostSourceFiles 1
+reqAtLeastFunctions 8

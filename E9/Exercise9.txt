@@ -1,0 +1,48 @@
+Saba Ramadan
+Section 13
+
+1.
+  Header:
+	Mastermind.h
+	- This header file will contain the struct basis as well as the function declarations of all the functions used within the files.
+
+  Source:
+	Mastermind.c
+	- This source file will contain functions that take in the guesses and dothe checks to see exact/inexact guesses and do the main work of running the actual game as well as prints the final results.         
+
+	Basics.c
+	-This source file will contain functions that get the values from the user and create the struct for the game.
+
+2.
+  typedef struct
+  {
+     int seed;
+     char letter;
+     int position;
+     int guesess;
+  }MastGame
+
+3.
+  int getSeed();
+   - This function will prompt for the seed value, place it into the random number generator. Also it ches if a non-negative number is being used.
+
+  char getMaxLetter();
+   - This function will prompt for the Max letter used and place it in the global char variable for the letter and will be used in other funcs to make sure proper letters are inputed when giving guesses. Also it will check if the letter inputed is uppercase or not. 
+
+  int getPositions();
+    - This function will prompt user for the number of positions and check if its within the bounds of 1-8. This value will be put into a global int that will be used in other functions.
+
+  int getNumGuesses();
+    - This function will prompt for the number of guesses, making sure a non negative number is used. It will save value into a global int variablr to be used in other functions.
+  
+  void Guesses();
+    -This function will prompt for the guesses, checking if they are valid answers and compare it to answer to see if right. Also it will call exact and inexact funcs that calculate if the letters are in the right places and how many correct letters are used in the guess. Then it will print out corresponding statements.
+
+  int exact(char temp[]);
+    -This function takes in the string guessed and calculates the number of letters that are in their correct spots and returns that value. 
+
+  int inexact(char temp[]);
+    - This function takes in the string guessed and calulates the number of letters that are correct but in the wrong spots and returns that value.
+   
+  void Results(boolean res);
+    -This function will print the outcome of the game, whether the person won or lost. There will be a boolean in which if the user puts in the correct guess before they run out of guesses then the boolean will return true otherwiseit will be false. If true then the win prompt will be put out and vise versa.

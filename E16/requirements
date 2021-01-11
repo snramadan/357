@@ -1,0 +1,24 @@
+reqAtMostGlobalVariables 0
+reqAtMostStaticFileVariables 0
+reqAtMostStaticLocalVariables 0
+reqNoUseOf "(^goto | goto )"
+reqNoUseOf "(^strcat|[ ,(=]strcat)[( ]"
+reqNoUseOf "(^strncat|[ ,(=]strncat)[( ]"
+reqNoUseOf "(^strchr|[ ,(=]strchr)[( ]"
+reqNoUseOf "(^strcmp|[ ,(=]strcmp)[( ]"
+reqNoUseOf "(^strncmp|[ ,(=]strncmp)[( ]"
+reqNoUseOf "(^strcoll|[ ,(=]strcoll)[( ]"
+reqNoUseOf "(^strcpy|[ ,(=]strcpy)[( ]"
+reqNoUseOf "(^strcspn|[ ,(=]strcspn)[( ]"
+reqNoUseOf "(^strerror|[ ,(=]strerror)[( ]"
+reqNoUseOf "(^strlen|[ ,(=]strlen)[( ]"
+reqNoUseOf "(^strpbrk|[ ,(=]strpbrk)[( ]"
+reqNoUseOf "(^strrchr|[ ,(=]strrchr)[( ]"
+reqNoUseOf "(^strspn|[ ,(=]strspn)[( ]"
+reqNoUseOf "(^strstr|[ ,(=]strstr)[( ]"
+reqNoUseOf "(^strtok|[ ,(=]strtok)[( ]"
+reqNoUseOf "(^strxfrm|[ ,(=]strxfrm)[( ]"
+reqAtLeastHeaderFiles 0
+reqAtMostHeaderFiles 0
+reqAtLeastSourceFiles 1
+reqAtMostSourceFiles 1

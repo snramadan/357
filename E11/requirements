@@ -1,0 +1,3 @@
+reqAtLeastHeaderFiles 1
+reqAtMostHeaderFiles 1
+reqAtMostSourceFiles 0
