@@ -1,0 +1,7 @@
+Test building a hash table with 1000 total entries of data that contains
+sub-allocations of dynamic memory. The 1000 total entries includes
+duplicates so the unique entries is something less than 1000. The metrics
+(htMetrics) are also verified.
+
+Note: The hash table is destroyed to allow for the use of valgrind to
+verify no memory is leaked.

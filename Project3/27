@@ -1,0 +1,9 @@
+Tests htToArray on a hash table built with 1000 total entries of data that
+contains sub-allocations of dynamic memory. The 1000 total entries includes
+duplicates so the unique entries is something less than 1000. The metrics
+(htMetrics) are also verified as well as the contents of the array returned
+by htToArray.
+
+Note: The hash table is destroyed and the array returned by htToArray are
+freed after testing to allow for the use of valgrind to verify no memory
+is leaked.

@@ -1,0 +1,6 @@
+reqAtMostGlobalVariables 0
+reqAtMostStaticFileVariables 0
+reqAtMostStaticLocalVariables 0
+reqNoUseOf "(^goto | goto )"
+reqNoGNUSearchFunctions
+reqAtLeastSourceFiles 1

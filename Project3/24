@@ -1,0 +1,4 @@
+Test htMetrics on an non-empty hash table after rehashing has occurred.
+
+Note: The hash table is destroyed after testing to allow for the use of
+valgrind to verify no memory is leaked.

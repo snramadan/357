@@ -1,0 +1,10 @@
+reqAtMostGlobalVariables 0
+reqAtMostStaticFileVariables 0
+reqAtMostStaticLocalVariables 0
+reqNoUseOf "(^goto | goto )"
+reqNoUseOf "(^kill|[!(= ]kill) *[(]"
+reqNoUseOf "(^killpg|[!(= ]killpg) *[(]"
+reqAtLeastHeaderFiles 1
+reqAtMostHeaderFiles 1
+reqAtLeastSourceFiles 2
+reqAtMostSourceFiles 2

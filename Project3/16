@@ -1,0 +1,12 @@
+Test rehashing through several cycles. Testing includes:
+
+   * Verifying the recycling happens at the correct time based on the load
+     factor specified to htCreate and the contents of the hash table.
+   * The hash table grows its capacity as specified by the sizes array
+     specified to htCreate.
+   * That the number of unique entries is maintained correctly.
+   * That the number of total entries is maintained correctly.
+   * That all of the entries can be found by htLookUp after rehashing.
+
+Note: The hash table is destroyed after testing to allow for the use of
+valgrind to verify no memory is leaked.
