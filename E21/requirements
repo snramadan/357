@@ -1,0 +1,28 @@
+reqAtMostGlobalVariables 0
+reqAtMostStaticFileVariables 0
+reqAtMostStaticLocalVariables 0
+reqAtMostSourceFiles 1
+reqAtMostHeaderFiles 0
+reqNoUseOf "(^goto | goto )"
+reqUseOf "(^dup2|[(= ]dup2) *[(]"
+reqNoUseOf "(^fopen|[(= ]fopen) *[(]"
+reqNoUseOf "(^open|[(= ]open) *[(]"
+reqNoUseOf "(^fread|[(= ]fread) *[(]"
+reqNoUseOf "(^read|[(= ]read) *[(]"
+reqNoUseOf "(^fwrite|[(= ]fwrite) *[(]"
+reqNoUseOf "(^write|[(= ]write) *[(]"
+reqNoUseOf "(^fclose|[(= ]fclose) *[(]"
+reqNoUseOf "(^close|[(= ]close) *[(]"
+reqNoUseOf "(^fscanf|[(= ]fscanf) *[(]"
+reqNoUseOf "(^scanf|[(= ]scanf) *[(]"
+reqNoUseOf "(^printf|[(= ]printf) *[(]"
+reqNoUseOf "(^fgetc|[(= ]fgetc) *[(]"
+reqNoUseOf "(^fgets|[(= ]fgets) *[(]"
+reqNoUseOf "(^fputc|[(= ]fputc) *[(]"
+reqNoUseOf "(^fputs|[(= ]fputs) *[(]"
+reqNoUseOf "(^getc|[(= ]getc) *[(]"
+reqNoUseOf "(^gets|[(= ]gets) *[(]"
+reqNoUseOf "(^putc|[(= ]putc) *[(]"
+reqNoUseOf "(^puts|[(= ]puts) *[(]"
+reqNoUseOf "(^getchar|[(= ]getchar) *[(]"
+reqNoUseOf "(^putchar|[(= ]putchar) *[(]"

@@ -1,0 +1,10 @@
+reqAtMostGlobalVariables 0
+reqAtMostStaticFileVariables 0
+reqAtMostStaticLocalVariables 0
+reqNoUseOf "(^goto | goto )"
+reqNoUseOf "(^getcwd|[(= ]getcwd) *[(]"
+reqNoUseOf "(^getenv|[(= ]getenv) *[(]"
+reqNoUseOf "(^system|[(= ]system) *[(]"
+reqNoStdLibExecFunctions
+reqAtLeastHeaderFiles 0
+reqAtLeastSourceFiles 1

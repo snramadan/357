@@ -1,0 +1,14 @@
+reqAtMostGlobalVariables 0
+reqAtMostStaticFileVariables 0
+reqAtMostStaticLocalVariables 0
+reqNoUseOf "(^goto | goto )"
+reqNoUseOf "(^fopen|[()= ]fopen) *[(]"
+reqNoUseOf "(^fread|[()= ]fread) *[(]"
+reqNoUseOf "(^fwrite|[()= ]fwrite) *[(]"
+reqNoUseOf "(^fclose|[()= ]fclose) *[(]"
+reqUseOf "(^open|[()= ]open) *[(]"
+reqUseOf "(^read|[()= ]read) *[(]"
+reqUseOf "(^write|[()= ]write) *[(]"
+reqUseOf "(^close|[()= ]close) *[(]"
+reqAtLeastHeaderFiles 0
+reqAtLeastSourceFiles 1

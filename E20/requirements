@@ -1,0 +1,15 @@
+reqAtMostGlobalVariables 0
+reqAtMostStaticFileVariables 0
+reqAtMostStaticLocalVariables 0
+reqNoUseOf (^goto | goto )
+reqUseOf "(^fork|[(= ]fork) *[(]"
+reqUseOf "(^execl|[(= ]execl) *[(]"
+reqUseOf "(^wait|[(= ]wait) *[(]"
+reqUseOf "(^pipe|[!(= ]pipe) *[(]"
+reqUseOf "(^close|[!(= ]close) *[(]"
+reqUseOf "(^read|[(= ]read) *[(]"
+reqUseOf "(^write|[(= ]write) *[(]"
+reqAtLeastHeaderFiles 0
+reqAtMostHeaderFiles 0
+reqAtLeastSourceFiles 1
+reqAtMostSourceFiles 1

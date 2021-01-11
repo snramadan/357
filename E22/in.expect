@@ -1,0 +1,9 @@
+
+Current value: 0x00000000
+Enter bitwise operator (or "quit"): Enter RHS for the & operator in hex: 0x00000000 & 0x00000005 is 0x00000000
+
+Current value: 0x00000000
+Enter bitwise operator (or "quit"): Enter RHS for the | operator in hex: 0x00000000 | 0x00000006 is 0x00000006
+
+Current value: 0x00000006
+Enter bitwise operator (or "quit"): 

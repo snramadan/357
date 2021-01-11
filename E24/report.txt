@@ -1,0 +1,60 @@
+Buffered I/O Report (to be completed by you)
+
+After writing your solution for the exercise use it with the Unix time command
+(man time) to complete the table below. Be sure of the following:
+
+   1. The times must be the sum of sys and user - DO NOT USE OR INCLUDE real.
+      You might want to run a particular test more than once to see if you
+      get similar results. If you don't, just throw out any outliers and
+      average the rest.
+
+   2. The times are shown in seconds with a leading zero where appropriate,
+      for example, 0.023 seconds.
+
+   3. That you line up the decimal places to make it easy to read and compare
+      times.
+
+   4. That you answer the questions that follow the table.
+
+   +=====================================================+
+   | Buffer Size | Time to copy bigFile.txt (in seconds) |
+   +=====================================================+
+   |     1 byte  |                                11.677 |
+   |     2 bytes |                                 5.692 |
+   |     4 bytes |                                 3.190 |
+   |     8 bytes |                                 1.425 |
+   |    16 bytes |                                 0.733 |
+   |    32 bytes |                                 0.434 |
+   |    64 bytes |                                 0.173 |
+   |   128 bytes |                                 0.103 |
+   |   256 bytes |                                 0.049 |
+   |   512 bytes |                                 0.028 |
+   |  1024 bytes |                                 0.018 |
+   |  2048 bytes |                                 0.013 |
+   |  4096 bytes |                                 0.010 |
+   |  8192 bytes |                                 0.008 |
+   | 16384 bytes |                                 0.009 |
+   | 32768 bytes |                                 0.006 |
+   | 65536 bytes |                                 0.006 |
+   +======================================================
+
+Questions:
+
+1. What system did you test on?
+	
+   mac terminal 
+   unix 4
+
+2. Was the affect of the buffer size larger, smaller, or about what you
+   expected it would be?
+	
+   It was about what I expected it to be as what was demoed in class.
+
+3. Recall that _fread_ and _fwrite_ (man 3) perform buffered input and output.
+   Based on your observations, what buffer size do you think would be best for
+   them to use? Defend your answer by clearly explaining why you would not
+   choose a larger or smaller buffer size.
+	
+   They should use 8192 bytes as the buffer size.
+   I wouldnt go smaller because the permformance time takes longer with a smaller buffersize.
+   I wouldnt go larger becuase you dont get any significant performance improvement after that.
